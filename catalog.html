@@ -36,13 +36,14 @@
                 class="navigation-link-n-like">12</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">ХОЧУ СЮДА!</a>
+            <a class="navigation-link button" href="#">ХОЧУ СЮДА!</a>
           </li>
         </ul>
       </div>
     </header>
 
     <main class="main-inner">
+      <div class="main-inner-filter">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -121,12 +122,13 @@
                 <button class="button button-blue" type="submit">ПРИМЕНИТЬ</button>
               </li>
               <li class="filter-button-item">
-                <button class="button button-light" type="submit">Сбросить</button>
+                <button class="button" type="submit">Сбросить</button>
               </li>
             </ul>
           </fieldset>
         </form>
       </section>
+    </div>
       <section class="hotel-catalog">
         <h2 class="hotel-catalog-title">НАЙДЕНО ГОСТИНИЦ: 38</h2>
         <select class="select-control" name="select-control" aria-label="Сортировка">
@@ -136,7 +138,7 @@
         </select>
         <ul class="view-filter-list">
           <li class="view-filter-item">
-            <a href="#" class="view-filter-button view-filter-button-border">
+            <a href="#" class="view-filter-button view-filter-button-active">
               <span class="visually-hidden">Показать карточки</span>
             </a>
           </li>
@@ -163,7 +165,7 @@
             <a class="button button-brown" href="#">
               ПОДРОБНЕЕ
             </a>
-            <button class="button button-blue" type="button">В ИЗБРАННОМ</button>
+            <button class="button button-blue" type="button">В ИЗБРАННОЕ</button>
             <h4 class="visually-hidden">Количество звезд</h4>
             <span class="visually-hidden star">звездочка</span>
             <span class="visually-hidden star">звездочка</span>
@@ -182,7 +184,7 @@
             <a class="button button-brown" href="#">
               ПОДРОБНЕЕ
             </a>
-            <button class="button button-blue" type="button">В ИЗБРАННОМ</button>
+            <button class="button button-green" type="button">В ИЗБРАННОМ</button>
             <h4 class="visually-hidden">Количество звезд</h4>
             <span class="visually-hidden star">звездочка</span>
             <span class="visually-hidden star">звездочка</span>
@@ -201,7 +203,7 @@
             <a class="button button-brown" href="#">
               ПОДРОБНЕЕ
             </a>
-            <button class="button button-blue" type="button">В ИЗБРАННОМ</button>
+            <button class="button button-blue" type="button">В ИЗБРАННОЕ</button>
             <h4 class="visually-hidden">Количество звезд</h4>
             <span class="visually-hidden star">звездочка</span>
             <span class="visually-hidden star">звездочка</span>
@@ -219,7 +221,7 @@
             <a class="button button-brown" href="#">
               ПОДРОБНЕЕ
             </a>
-            <button class="button button-blue" type="button">В ИЗБРАННОМ</button>
+            <button class="button button-blue" type="button">В ИЗБРАННОЕ</button>
             <h4 class="visually-hidden">Количество звезд</h4>
             <span class="visually-hidden star">звездочка</span>
             <span class="visually-hidden star">звездочка</span>
@@ -228,28 +230,28 @@
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-link-light">1</a>
+            <a href="#" class="pagination-link-light">1</a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-link-blue">2</a>
+            <a href="#" class="pagination-link-blue">2</a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-link-blue">3</a>
+            <a href="#" class="pagination-link-blue">3</a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-link-blue">4</a>
+            <a href="#" class="pagination-link-blue">4</a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-link-no-background">...</a>
+            <a href="#" class="pagination-link-no-background">...</a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-link-blue">10</a>
+            <a href="#" class="pagination-link-blue">10</a>
           </li>
         </ul>
       </section>
-      <section class="sending">
-        <h2 class="sending-header">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-        <p class="sending-paragraph">Только полезная информация и никакого спама,<br>честное бойскаутское!/p>
+      <section class="sending-catalog">
+        <h2 class="sending-title sending-title-catalog">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <p class="sending-paragraph sending-paragraph-catalog">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="sending-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="submit-input" type="submit" value="ПОДПИСАТЬСЯ">
           <input class="email-input" type="email" placeholder="Ваш e-mail" name="email" required>
@@ -261,17 +263,17 @@
           <h2 class="visually-hidden">Контакты</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a href="https://vk.com/htmlacademy" class="button">
+              <a href="https://vk.com/htmlacademy" class="button-vk">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="https://t.me/htmlacademy" class="button">
+              <a href="https://t.me/htmlacademy" class="button-telegram">
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="https://www.youtube.com/user/htmlacademyru" class="button">
+              <a href="https://www.youtube.com/user/htmlacademyru" class="button-youtube">
                 <span class="visually-hidden">Ютуб</span>
               </a>
             </li>
@@ -280,7 +282,7 @@
         <section class="footer-adres">
           <h2 class="visually-hidden">Как с нами связаться</h2>
           <address class="footer-address">
-            <a href="tel:+78128121212" class="footer-address-phone"></a>
+            <a href="tel:+78128121212" class="footer-address-phone">+7 (812) 812-12-12</a>
           </address>
         </section>
         <aside class="footer-advertising">
