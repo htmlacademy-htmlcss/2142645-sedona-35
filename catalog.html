@@ -8,14 +8,13 @@
   </head>
 
   <body>
-
+    <div class="shared-container">
     <header class="page-header">
       <div class="page-header-top">
         <nav class="nav-navigation-list">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link-logo" href="index.html"><img src="./images/logo.png" width="140" height="70"
-                  alt="Логотип: «Город седона»"></a>
+              <img src="./images/logo.png" width="140" height="70" alt="Логотип: «Город седона»">
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
@@ -29,16 +28,16 @@
           </ul>
         </nav>
         <div class="header-controls">
-          <ul class="navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+          <ul class="navigation-user-list">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link-col-1" href="#"><span class="visually-hidden">Поиск</span></a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span><span
+            <li class="navigation-user-item">
+              <a class="navigation-user-link-col-2" href="#"><span class="visually-hidden">Избранное</span><span
                   class="navigation-link-n-like">12</span></a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link button" href="#">ХОЧУ СЮДА!</a>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link-col-3 button" href="#">ХОЧУ СЮДА!</a>
             </li>
           </ul>
         </div>
@@ -46,9 +45,12 @@
       <div class="page-header-bottom main-inner-filter">
         <div class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a href="index.html" class="breadcrumbs-link"><span class="visually-hidden">Главная</span></a>
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item breadcrumbs-home-item">
+              <a href="index.html" class="breadcrumbs-link breadcrumbs-main-link"><span class="visually-hidden">Главная</span></a>
+            </li>
+            <li class="breadcrumbs-item breadcrumbs-arrow">
+              <img src="#">
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -58,7 +60,7 @@
         <section class="filter">
           <h2 hidden class="visually-hidden">Фильтры</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-group-col-1">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -81,7 +83,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-group-col-2">
               <legend class="catalog-filter-title">Тип жилья::</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -104,7 +106,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-group-col-3">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <ul class="catalog-filter-list-price">
                 <li class="catalog-filter-item-price">
@@ -119,14 +121,14 @@
             </fieldset>
             <div class="catalog-filter-container">
               <button class="button button-blue" type="submit">ПРИМЕНИТЬ</button>
-              <button class="button" type="submit">Сбросить</button>
+              <button class="button button-reset" type="submit">Сбросить</button>
             </div>
           </form>
         </section>
       </div>
     </header>
 
-    <main class="main-container main-inner">
+    <main class="main-inner">
       <section class="hotel-catalog">
         <div class="top-navigation-container">
           <h2 class="hotel-catalog-title">НАЙДЕНО ГОСТИНИЦ: 38</h2>
@@ -153,8 +155,10 @@
             </li>
           </ul>
         </div>
+        <div class="product-card-container">
         <ul class="product-card-list">
           <li class="product-card-item">
+            <div class="carrd">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="./images/photo-item-catalog/hotel-1.jpg" width="300" height="212"
                 alt="">
@@ -172,8 +176,10 @@
             <span class="visually-hidden star">звездочка</span>
             <span class="visually-hidden star">звездочка</span>
             <span class="rating">РЕЙТИНГ:8,5</span>
+          </div>
           </li>
           <li class="product-card-item">
+            <div class="carrd">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="./images/photo-item-catalog/hotel-2.jpg" width="300" height="212"
                 alt="">
@@ -191,8 +197,10 @@
             <span class="visually-hidden star">звездочка</span>
             <span class="visually-hidden star">звездочка</span>
             <span class="rating">РЕЙТИНГ:9,2</span>
+          </div>
           </li>
           <li class="product-card-item">
+            <div class="carrd">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="./images/photo-item-catalog/hotel-3.jpg" width="300" height="212"
                 alt="">
@@ -209,8 +217,10 @@
             <span class="visually-hidden star">звездочка</span>
             <span class="visually-hidden star">звездочка</span>
             <span class="rating">РЕЙТИНГ:6,9</span>
+          </div>
           </li>
           <li class="product-card-item">
+            <div class="carrd">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="./images/photo-item-catalog/hotel-4.jpg" width="300" height="212"
                 alt="">
@@ -226,26 +236,28 @@
             <span class="visually-hidden star">звездочка</span>
             <span class="visually-hidden star">звездочка</span>
             <span class="rating">РЕЙТИНГ:5,0</span>
+          </div>
           </li>
         </ul>
+      </div>
         <ul class="pagination">
           <li class="pagination-item">
-            <a href="#" class="pagination-link-light">1</a>
+            <a href="#" class="pagination-link pagination-link-light">1</a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link-blue">2</a>
+            <a href="#" class="pagination-link pagination-link-blue">2</a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link-blue">3</a>
+            <a href="#" class="pagination-link pagination-link-blue">3</a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link-blue">4</a>
+            <a href="#" class="pagination-link pagination-link-blue">4</a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link-no-background">...</a>
+            <a href="#" class="pagination-link pagination-link-no-background">...</a>
           </li>
           <li class="pagination-item">
-            <a href="#" class="pagination-link-blue">10</a>
+            <a href="#" class="pagination-link pagination-link-blue">10</a>
           </li>
         </ul>
       </section>
@@ -293,7 +305,7 @@
         </a>
       </aside>
     </footer>
-
+    </div>
   </body>
 
 </html>
