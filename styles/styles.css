@@ -143,7 +143,7 @@ body {
 .navigation-user-link-col-1 {
   display: block;
   box-sizing: border-box;
-  border: 1px red solid;
+  outline: 1px red solid;
   width: 44px;
   height: 64px;
 }
@@ -151,7 +151,7 @@ body {
 .navigation-user-link-col-2 {
   display: block;
   box-sizing: border-box;
-  border: 1px red solid;
+  outline: 1px red solid;
   width: 44px;
   height: 64px;
 }
@@ -423,7 +423,7 @@ body {
 }
 
 .footer-social-item {
-  border: 1px red solid;
+  outline: 1px red solid;
   width: 47px;
   height: 40px;
 }
@@ -439,7 +439,7 @@ body {
 }
 
 .footer-advertising {
-  border: 1px red solid;
+  outline: 1px red solid;
   width: 115px;
   height: 33px;
   margin-right: 70px;
@@ -460,7 +460,7 @@ body {
 
 .inner-header-title {
   margin: 0 0 8px 70px;
-  color: white;
+  color: #FFFFFF;
 }
 
 .breadcrumbs-list {
@@ -471,11 +471,11 @@ body {
 }
 
 .breadcrumbs-item {
-  border: red 1px solid;
+  outline: red 1px solid;
 }
 
 .breadcrumbs-home-item {
-  border: 1px red solid;
+  outline: 1px red solid;
   margin-left: 67px;
   margin-right: 7px;
   width: 19px;
@@ -549,7 +549,7 @@ body {
 }
 
 .button-reset {
-  border: red 1px solid;
+  outline: red 1px solid;
   padding: 8px;
 }
 
@@ -598,7 +598,7 @@ body {
 }
 
 .select-control {
-  border: 2px solid #E5E5E5;
+  outline: 2px solid #E5E5E5;
 border-radius: 4px;
   width: 292px;
   height: 49px;
@@ -609,7 +609,7 @@ border-radius: 4px;
 .view-filter-list {
   display: flex;
   list-style-type: none;
-  border: red solid 1px;
+  outline: red solid 1px;
   padding: 0;
   width: 160px;
   margin: 0 auto 0 0;
@@ -619,7 +619,7 @@ border-radius: 4px;
   width: 48px;
   height: 48px;
   margin-right: 8px;
-  border: red solid 1px;
+  outline: red solid 1px;
 }
 
 .view-filter-item:last-child {
@@ -683,7 +683,7 @@ border-radius: 4px;
 
 .pagination {
   display: flex;
-  margin: 80 0 0;
+  margin: 80px 0 0;
   padding: 0;
   width: 400px;
   margin-left: 70px;
