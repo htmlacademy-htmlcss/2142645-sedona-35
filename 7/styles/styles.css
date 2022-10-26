@@ -1,0 +1,772 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --b-family: "PT Sans", Arial, sans-serif;
+  --h2: 18px/21px var(--b-family);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  /* font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px; */
+  font: var(--h2);
+  color: #000000;
+  background: #F2F2F2;
+}
+
+.shared-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  /* font-weight: 700;
+  font-size: 16px;
+  line-height: 20px; */
+  font: 700 16px/20px var(--b-family);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 8px 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 4px;
+}
+
+.button-blue {
+  background: #82B3D3;
+}
+
+.button-brown {
+  background: #756157;
+}
+
+.button-green {
+  background: #7DB54F;
+}
+
+/* header */
+
+.page-header {
+  background-color: #FFFFFF;
+}
+
+.page-header-top {
+  display: flex;
+  height: 64px;
+}
+
+.nav-navigation-list {
+  width: 640px;
+  margin-right: 152px;
+  margin-left: 70px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header-controls {
+  width: 300px;
+  margin-right: auto;
+  margin: 0;
+}
+
+.navigation-user-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-link {
+  display: inline-block;
+  padding: 20px 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-item:nth-of-type(2) {
+  margin-left: 30px;
+}
+
+.navigation-link-n-like {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #7DB54F;
+  border-radius: 10px;
+}
+
+.navigation-user-link-col-1 {
+  display: block;
+  box-sizing: border-box;
+  outline: 1px red solid;
+  width: 44px;
+  height: 64px;
+}
+
+.navigation-user-link-col-2 {
+  display: block;
+  box-sizing: border-box;
+  outline: 1px red solid;
+  width: 44px;
+  height: 64px;
+}
+
+.navigation-user-link-col-3 {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 8px 34px;
+  background: #756157;
+  border-radius: 4px;
+}
+
+/* index.html */
+
+.page-header-bottom {
+  background-image: url("../images/background/welcom-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-top: 51px;
+  height: 434px;
+}
+
+.welcome-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-index {
+  flex-grow: 1;
+}
+
+.intro {
+  padding-top: 69px;
+  padding-bottom: 90px;
+  background-color: #FFFFFF;
+}
+
+.intro-paragraph {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 25px;
+}
+
+.intro-advantages {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+}
+
+.external-advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
+.external-advantages-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-container {
+  display: flex;
+
+}
+
+.advantage {
+  box-sizing: border-box;
+  height: 384px;
+  width: 400px;
+}
+
+.inner-advantages-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages-item-color-1 {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-color-2 {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-blok-1 {
+  padding-top: 103px;
+}
+
+.advantages-item-blok-2 {
+  padding-top: 182px;
+}
+
+.advantages-tittle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-tittle-intro {
+  margin-bottom: 62px;
+  color: #FFFFFF;
+}
+
+.advantages-tittle-blok-1 {
+  margin-bottom: 62px;
+}
+
+.advantages-tittle-blok-2 {
+  margin-bottom: 30px;
+}
+
+.advantages-description {
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-description-intro {
+  color: #FFFFFF
+}
+
+.advantage-description {
+  padding-top: 92px;
+  background-color: #82B3D3;
+}
+
+/* hotel-searsh */
+
+.hotel-search {
+  box-sizing: border-box;
+  height: 406px;
+  padding-top: 96px;
+  background: #FFFFFF;
+}
+
+.hotel-search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotel-search-paragraph {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 0 54px;
+  text-align: center;
+  color: #333333;
+}
+
+.hotel-search-button {
+  display: block;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 8px 50px;
+  margin: 0 auto;
+  background: #756157;
+  border-radius: 4px;
+  border: none;
+
+}
+
+/* sending */
+
+.sending {
+  box-sizing: border-box;
+  height: 415px;
+  padding-top: 96px;
+}
+
+.sending-catalog {
+  padding: 96px 0 104px;
+  background-color: #FFFFFF;
+}
+
+.sending-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+
+.sending-paragraph {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 0 54px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.sending {
+  background-image: url("../images/background/sending-background.jpg");
+  background-color: #FFFFFF;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.sending-form {
+  display: flex;
+  justify-content: center;
+}
+
+.email-input {
+  width: 452px;
+  height: 52px;
+  background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.submit-input {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #82B3D3;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  padding: 8px 50px;
+}
+
+/* footer */
+
+.page-footer {
+  display: flex;
+  box-sizing: border-box;
+  height: 120px;
+  padding-top: 45px;
+  background-color: #FFFFFF;
+}
+
+.footer-social {
+  width: 300px;
+  margin-right: auto;
+  margin-left: 70px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  outline: 1px red solid;
+  width: 47px;
+  height: 40px;
+}
+
+.footer-address-phone {
+  font-family: var(--b-family);
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-advertising {
+  outline: 1px red solid;
+  width: 115px;
+  height: 33px;
+  margin-right: 70px;
+  margin-left: 236px;
+}
+
+/* catalog.html */
+
+.main-inner-filter {
+  box-sizing: border-box;
+  padding-top: 35px;
+  height: 412px;
+  background-image: url("../images/background/filter-background.jpg");
+  background-color: #000000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  margin: 0 0 8px 70px;
+  color: #FFFFFF;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+.breadcrumbs-item {
+  outline: red 1px solid;
+}
+
+.breadcrumbs-home-item {
+  outline: 1px red solid;
+  margin-left: 67px;
+  margin-right: 7px;
+  width: 19px;
+  height: 21px;
+}
+
+.breadcrumbs-arrow-item {
+  margin-right: 10px;
+  width: 8px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.breadcrumbs-main-link {
+  padding: 3px;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.catalog-filter-group-col-1 {
+  width: 150px;
+  margin-right: 70px;
+  margin-left: 70px;
+}
+
+.catalog-filter-group-col-2 {
+  width: 150px;
+  margin-right: 140px;
+}
+
+.catalog-filter-group-col-3 {
+  width: 288px;
+  margin-right: 70px;
+}
+
+.catalog-filter-container {
+  display: flex;
+  flex-direction: column;
+  width: 191px;
+  margin-right: auto;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-list-price {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-container .button-blue {
+  margin: 56px 0 32px;
+  padding: 8px 50px;
+}
+
+.button-reset {
+  outline: red 1px solid;
+  padding: 8px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 32px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.catalog-filter-item {
+  margin-bottom: 16px;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
+}
+
+.catalog-filter-item-name {
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.hotel-catalog {
+  padding-bottom: 60px;
+  margin: 0;
+  background-color: #FFFFFF;
+}
+
+.top-navigation-container {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom: 40px;
+}
+
+.hotel-catalog-title {
+  width: 338px;
+  margin: 0 200px 0 70px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  outline: 2px solid #E5E5E5;
+  border-radius: 4px;
+  width: 292px;
+  height: 49px;
+  margin-right: 70px;
+  color: #333333;
+}
+
+.view-filter-list {
+  display: flex;
+  list-style-type: none;
+  outline: red solid 1px;
+  padding: 0;
+  width: 160px;
+  margin: 0 auto 0 0;
+}
+
+.view-filter-item {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  outline: red solid 1px;
+}
+
+.view-filter-item:last-child {
+  margin: 0;
+}
+
+/* .product-card-container {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.product-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.product-card-item {
+  box-sizing: border-box;
+  width: 33.3%;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.carrd {
+  padding: 20px;
+} */
+
+.product-card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  margin: 0;
+  padding: 0 70px;
+  gap: 20px;
+}
+
+.product-card-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  padding: 20px;
+  gap: 16px 20px;
+}
+
+.product-card-link {
+  text-decoration: none;
+  grid-column: 1 / -1;
+}
+.product-card-image {
+  display: block;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  color: #000000;
+}
+
+.services-name {
+  color: #333333;
+}
+
+.services-price {
+  font-weight: 400;
+  color: #333333;
+  justify-self: end;
+}
+
+.rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 9px 0 8px;
+  color: #333333;
+  background: #F2F2F2;
+  border-radius: 4px;
+}
+
+.pagination {
+  display: flex;
+  margin: 80px 0 0;
+  padding: 0;
+  width: 400px;
+  margin-left: 70px;
+  list-style-type: none;
+}
+
+.pagination-item {
+  width: 60px;
+  margin-right: 8px;
+}
+
+.pagination-item:last-of-type {
+  margin: 0;
+}
+
+.pagination-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+}
+
+.pagination-link-light {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #000000;
+  text-decoration: none;
+  background: #F2F2F2;
+}
+
+.pagination-link-blue {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #82B3D3;
+}
+
+.pagination-link-no-background {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.sending-title-catalog {
+  color: #000000;
+}
+
+.sending-paragraph-catalog {
+  color: #333333;
+}
