@@ -59,7 +59,9 @@ body {
   font: 700 16px/20px var(--b-family);
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: #FFFFFF;
+  padding: 8px 0;
   background-color: transparent;
   border: 0;
   border-radius: 4px;
@@ -270,7 +272,7 @@ body {
   color: #FFFFFF;
 }
 
-.advantages-tittle-blok-1{
+.advantages-tittle-blok-1 {
   margin-bottom: 62px;
 }
 
@@ -585,12 +587,13 @@ body {
 .top-navigation-container {
   display: flex;
   align-items: center;
+  padding-top: 50px;
+  margin-bottom: 40px;
 }
 
 .hotel-catalog-title {
   width: 338px;
-  margin-right: 200px;
-  margin-left: 70px;
+  margin: 0 200px 0 70px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -599,7 +602,7 @@ body {
 
 .select-control {
   outline: 2px solid #E5E5E5;
-border-radius: 4px;
+  border-radius: 4px;
   width: 292px;
   height: 49px;
   margin-right: 70px;
@@ -626,19 +629,19 @@ border-radius: 4px;
   margin: 0;
 }
 
-.product-card-container {
+/* .product-card-container {
   padding-left: 70px;
   padding-right: 70px;
 }
 
 .product-card-list {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
   margin: 0;
+  padding: 0;
   margin-left: -10px;
   margin-right: -10px;
-  padding: 0;
 }
 
 .product-card-item {
@@ -651,10 +654,31 @@ border-radius: 4px;
 
 .carrd {
   padding: 20px;
+} */
+
+.product-card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  margin: 0;
+  padding: 0 70px;
+  gap: 20px;
+}
+
+.product-card-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  padding: 20px;
+  gap: 16px 20px;
 }
 
 .product-card-link {
   text-decoration: none;
+  grid-column: 1 / -1;
+}
+.product-card-image {
+  display: block;
 }
 
 .product-card-title {
@@ -672,13 +696,18 @@ border-radius: 4px;
 .services-price {
   font-weight: 400;
   color: #333333;
+  justify-self: end;
 }
 
 .rating {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  padding: 9px 0 8px;
   color: #333333;
+  background: #F2F2F2;
+  border-radius: 4px;
 }
 
 .pagination {
