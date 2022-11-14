@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="./favicon.ico">
   </head>
 
   <body>
@@ -38,7 +39,7 @@
                 <a class="navigation-user-link navigation-user-link-col-2" href="#"><span
                     class="visually-hidden">Избранное</span><span class="navigation-user-n-like">12</span></a>
               </li>
-              <li class="navigation-user-item">
+              <li class="navigation-user-item navigation-user-button">
                 <a class="navigation-user-link-col-3 button button-brown" href="#">ХОЧУ СЮДА!</a>
               </li>
             </ul>
@@ -72,7 +73,7 @@
                     Седона — не аттракцион для <br>туристов, там течёт своя <br>жизнь
                   </p>
                 </div>
-                <img class="house" src="./images/advantages/advantages-photo-1.jpg" height="384" width="800"
+                <img class="advantage-foto" src="./images/advantages/advantages-photo-1.jpg" height="384" width="800"
                   alt="Домик жителя Седоны">
               </div>
               <ul class="inner-advantages-list">
@@ -98,7 +99,8 @@
             </li>
             <li class="external-advantages-item">
               <div class="advantages-container">
-                <img class="bridge-dyavol" src="./images/advantages/advantages-photo-2.jpg" alt="мост дьявола">
+                <img class="advantage-foto" src="./images/advantages/advantages-photo-2.jpg" alt="мост дьявола"
+                  height="384" width="800">
                 <div class="advantage advantage-description">
                   <h3 class="advantages-tittle advantages-tittle-intro">
                     Там есть <br>мост дьявола
@@ -110,7 +112,7 @@
               </div>
               <ul class="inner-advantages-list">
                 <li class="advantage advantages-item-color-2 advantages-item-blok-2 advantages-item-col-1">
-                  <h3 class="advantages-tittle advantages-tittle-blok-2">Житье</h3>
+                  <h3 class="advantages-tittle advantages-tittle-blok-2">Жильё</h3>
                   <p class="advantages-description">
                     Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!
                   </p>
@@ -122,7 +124,7 @@
                   </p>
                 </li>
                 <li class="advantage advantages-item-color-2 advantages-item-blok-2 advantages-item-col-3">
-                  <h3 class="advantages-tittle advantages-tittle-blok-2">Сувенир</h3>
+                  <h3 class="advantages-tittle advantages-tittle-blok-2">Сувениры</h3>
                   <p class="advantages-description">
                     Не только китайского, <br>но и настоящего местного <br>производства!
                   </p>
@@ -207,7 +209,7 @@
       </footer>
     </div>
 
-    <div class="modal-container modal-container-activ">
+    <div class="modal-container modal-container-activee">
       <div class="modal-search">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
@@ -255,7 +257,7 @@
                     <path d="M3 9v2h14V9H3Z" />
                   </svg>
                 </button>
-                <input class="number-of-people number-of-adults" id="number-of-adults" type="number"
+                <input class="number-of-people number-of-adults" id="number-of-adults" type="text"
                   name="number-of-adults" value="2" required placeholder="0">
                 <button class="number-of-people-button" type="button">
                   <svg class="number-of-people-button-icon" aria-hidden="true" focusable="false" width="20" height="20"
@@ -289,7 +291,7 @@
                     <path d="M3 9v2h14V9H3Z" />
                   </svg>
                 </button>
-                <input class="number-of-people number-of-children" id="number-of-children" type="number"
+                <input class="number-of-people number-of-children" id="number-of-children" type="text"
                   name="number-of-children" value="2" placeholder="0">
                 <button class="number-of-people-button" type="button">
                   <svg class="number-of-people-button-icon" aria-hidden="true" focusable="false" width="20" height="20"
