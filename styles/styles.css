@@ -955,6 +955,8 @@ body {
 }
 
 .pseudo-checkbox {
+  position: relative;
+  flex-shrink: 0;
   display: block;
   margin-right: 16px;
   width: 20px;
@@ -966,20 +968,18 @@ body {
 .pseudo-checkbox::after {
   content: "";
   position: absolute;
-  /* inset: 0; */
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  width: 20px;
+  height: 20px;
   background: url("../images/check-mark.svg") center left 4px no-repeat;
-  /* transform: scale(0); */
   opacity: 0;
-  /* transition: transform 0.2s ease, opacity 0.2s ease; */
 
 }
 
 .catalog-filter-input:checked ~ .pseudo-checkbox::after {
-  /* transform: scale(1); */
   opacity: 1;
 }
 
