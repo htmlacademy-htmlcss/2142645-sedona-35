@@ -28,9 +28,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  /* font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px; */
   font: var(--h2);
   color: #000000;
   background: #F2F2F2;
@@ -55,9 +52,6 @@ body {
 }
 
 .button {
-  /* font-weight: 700;
-  font-size: 16px;
-  line-height: 20px; */
   font: 700 16px/20px var(--b-family);
   text-transform: uppercase;
   text-decoration: none;
@@ -715,8 +709,6 @@ body {
   position: absolute;
   top: 6px;
   right: -16px;
-  /* bottom: 0; */
-  /* left: 0; */
   content: "";
   width: 6px;
   height: 10px;
@@ -785,46 +777,48 @@ body {
   margin-right: 70px;
 }
 
-.catalog-filter-input-price {
+.filter-input-price {
   box-sizing: border-box;
   border: 0;
   width: 143px;
   height: 48px;
   padding: 12px 45px 12px 20px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
   font-size: inherit;
   font-family: inherit;
   background: #F2F2F2;
+  font-weight: 700;
 }
 
-.catalog-filter-input-price::placeholder {
+.filter-input-price::placeholder {
   color: #000000;
   opacity: 0.6;
 }
 
-.catalog-filter-input-price:hover {
+.filter-input-price:hover {
   background: #E6E6E6;
 }
 
-.catalog-filter-input-price:focus {
+.filter-input-price:focus {
   background: #E6E6E6;
   outline: 3px solid #83B3D3;
 }
 
-.catalog-filter-input-price:active {
+.filter-input-price:active {
   outline: 2px solid #000000;
 }
 
-.catalog-filter-input-price-col-1 {
+.filter-price-col-1 {
   border-radius: 4px 0 0 4px;
 }
 
-.catalog-filter-input-price-col-2 {
+.filter-price-col-2 {
   border-radius: 0 4px 4px 0;
 }
 
-.catalog-filter-range-label {
+.filter-range-label {
   position: absolute;
   top: 12px;
   left: 0;
@@ -832,15 +826,11 @@ body {
   color: rgba(0, 0, 0, 0.302);
 }
 
-.catalog-filter-input-price {
-  font-weight: 700;
-}
-
-.catalog-filter-range-label-col-1 {
+.filter-range-label-col-1 {
   left: 106px;
 }
 
-.catalog-filter-range-label-col-2 {
+.filter-range-label-col-2 {
   left: 248px;
 }
 
@@ -946,7 +936,8 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 
@@ -1070,7 +1061,8 @@ body {
   background: #FFFFFF;
   color: #333333;
   cursor: pointer;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   font-family: inherit;
 }
 
@@ -1497,7 +1489,8 @@ body {
   border-radius: 4px;
   width: 31px;
   padding: 14px 0;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   text-align: center;
   font-weight: 700;
   font-size: 18px;
