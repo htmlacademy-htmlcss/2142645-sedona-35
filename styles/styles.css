@@ -1332,13 +1332,14 @@ body {
 }
 
 .modal-container-active {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-search {
   position: relative;
   padding: 64px 70px;
-  margin: 396px auto 0 auto;
   width: 717px;
   min-height: 576px;
   max-height: 800px;
@@ -1498,7 +1499,7 @@ body {
   background: #F2F2F2;
   border-radius: 4px;
   width: 31px;
-  padding: 14px 0;
+  padding: 16px 0 12px 0;
   -webkit-appearance: none;
           appearance: none;
   text-align: center;
